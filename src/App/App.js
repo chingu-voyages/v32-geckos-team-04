@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import styled, { keyframes } from 'styled-components';
 import logo from '../logo.svg';
 
