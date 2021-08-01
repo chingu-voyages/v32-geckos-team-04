@@ -33,8 +33,7 @@
 
 .input-error {
   height: 15px;
-  padding: 14px 0 0;
-  margin: -27px 0 14px;
+  margin: 0 0 8px;
   display: block;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 12px;
