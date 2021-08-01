@@ -49,7 +49,7 @@
 
 @media (min-width: 768px) {
   .form-button {
-    margin: 40px 0;
+    margin: 40px auto;
     width: 288px;
     height: 64px;
   }
