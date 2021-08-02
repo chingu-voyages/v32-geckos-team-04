@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import About from '../aboutus';
 import Signup from '../Signup/Signup';
 import Signin from '../Signin/Signin';
 
@@ -58,6 +59,12 @@ function App() {
   return (
     <>
       <Switch>
+        <Route exact path="/">
+          <About />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
         <Route path="/signup">
           <Signup
             handleEmail={handleEmail}
@@ -84,4 +91,5 @@ function App() {
     </>
   );
 }
+
 export default App;

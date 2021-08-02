@@ -23,6 +23,11 @@
   opacity: .2;
 }
 
+/* exclude this class from bootstrap syle box-sizing: border-box */
+:not(.form-label) {
+  box-sizing: unset;
+}
+
 .form-input {
   margin-bottom: 10px;
   border: none;
