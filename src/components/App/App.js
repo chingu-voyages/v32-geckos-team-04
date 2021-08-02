@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-import React  from 'react'
-import About from '../components/aboutus';
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Signup from '../Signup/Signup';
@@ -61,9 +58,6 @@ function App() {
   return (
     <>
       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
         <Route path="/signup">
           <Signup
             handleEmail={handleEmail}
