@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { Container, Col, Row } from 'reactstrap';
-import './aboutus.css';
+
+import { Container, Col, Row } from 'reactstrap'
+import './aboutus.css'
+import BurgerMenu from '../components/burger-menu/BurgerMenu'
 
 class About extends Component {
   render() {
     return (
       <React.Fragment>
+        <BurgerMenu anchor="left" />
         <Container>
           <Row>
             <Col md="12">
@@ -13,7 +16,11 @@ class About extends Component {
             </Col>
             <Row style={{ marginTop: '5%' }}>
               <Col xs="12" md="6">
-                <img width="100%" src="/images/pablita-finance.png" />
+                <img
+                  width="100%"
+                  src="/images/pablita-finance.png"
+                  alt="background"
+                />
               </Col>
               <Col xs="12" md="6">
                 <p>
