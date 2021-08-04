@@ -7,6 +7,8 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
   },
+  header: { padding: '10px', margin: '0 auto' },
+  footer: { position: 'absolute', bottom: '0' },
 })
 
 export default useStyles
