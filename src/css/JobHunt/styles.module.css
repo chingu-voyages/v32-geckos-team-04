@@ -1,0 +1,47 @@
+.container {
+}
+
+.subContainer {
+  display: flex;
+}
+
+.task_container {
+  width: 70%;
+  padding: 1rem;
+  background-color: aqua;
+  border-radius: 1rem;
+}
+
+.task_container header {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.actions_container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.actions_container li {
+  background-color: gray;
+  padding: '1rem';
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  color: white;
+}
+.activities_container {
+  display: flex;
+  justify-content: space-between;
+}
+.activities {
+  background-color: gray;
+  width: 49%;
+  height: 10rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}

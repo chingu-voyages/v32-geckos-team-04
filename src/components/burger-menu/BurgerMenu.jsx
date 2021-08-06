@@ -5,16 +5,16 @@ import ReorderIcon from '@material-ui/icons/Reorder'
 import BurgerList from './component/BurgerList'
 import useStyles from './styles'
 
-export default function SwipeableTemporaryDrawer({ anchor }) {
+export default function SwipeableTemporaryDrawer({ anchor = 'right' }) {
   const [state, setState] = useState(false)
   const classes = useStyles()
 
   const toggleDrawer = () => setState(!state)
 
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
       <React.Fragment key={anchor}>
-        <Button onClick={toggleDrawer} style={{ float: 'right' }}>
+        <Button onClick={toggleDrawer}>
           <ReorderIcon />
         </Button>
         <SwipeableDrawer
