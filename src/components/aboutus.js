@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import { Component } from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import './aboutus.css';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class About extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <Container>
           <Row>
             <Col md="12">
@@ -13,7 +14,7 @@ class About extends Component {
             </Col>
             <Row style={{ marginTop: '5%' }}>
               <Col xs="12" md="6">
-                <img width="100%" src="/images/pablita-finance.png" />
+                <img width="100%" src="/images/pablita-finance.png" alt="About" />
               </Col>
               <Col xs="12" md="6">
                 <p>
@@ -26,7 +27,7 @@ class About extends Component {
                   <strong>Olivia C.#3280</strong>, and <strong>Chi#2659</strong>{' '}
                   as one of the <a href="https://chingu.io/">Chingu</a> project.
                 </p>
-                <div class="caption">
+                <div className="caption">
                   Illustration by{' '}
                   <a href="https://icons8.com/illustrations/author/5bf673a26205ee0017636674">
                     Anna Golde
@@ -35,12 +36,12 @@ class About extends Component {
                 </div>
               </Col>
             </Row>
-            <Col></Col>
+            <Col />
           </Row>
         </Container>
-      </React.Fragment>
-    )
+      </>
+    );
   }
 }
 
-export default About
+export default About;
