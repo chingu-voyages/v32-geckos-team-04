@@ -8,7 +8,7 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <BurgerMenu anchor="left" />
+        <BurgerMenu anchor="right" />
         <Container>
           <Row>
             <Col md="12">

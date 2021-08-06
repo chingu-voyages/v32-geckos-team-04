@@ -1,14 +1,9 @@
 import clsx from 'clsx'
-import { ListItemText, ListItemIcon, ListItem, List } from '@material-ui/core'
-import HomeIcon from '@material-ui/icons/Home'
-import GroupIcon from '@material-ui/icons/Group'
-import FolderIcon from '@material-ui/icons/Folder'
-import EventNoteIcon from '@material-ui/icons/EventNote'
-import AssignmentIcon from '@material-ui/icons/Assignment'
+import { ListItemText, ListItem, List } from '@material-ui/core'
 
 import useStyles from '../styles'
 
-const BurgerList = ({ toggleDrawer }) => {
+const BurgerList = ({ toggleDrawer, isUserLogin }) => {
   const classes = useStyles()
 
   return (
@@ -18,20 +13,32 @@ const BurgerList = ({ toggleDrawer }) => {
       onClick={toggleDrawer}
       onKeyDown={toggleDrawer}
     >
-      <List>
-        {[
-          { text: 'Home', image: <HomeIcon /> },
-          { text: 'Team', image: <GroupIcon /> },
-          { text: 'Projects', image: <FolderIcon /> },
-          { text: 'Calendar', image: <EventNoteIcon /> },
-          { text: 'Documents', image: <AssignmentIcon /> },
-        ].map(({ text, image }) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{image}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+      {!isUserLogin ? (
+        <div className={classes.container}>
+          <div className={classes.button}>SignIn</div>
+          <div
+            style={{
+              margin: 'auto',
+              width: '3rem',
+              fontWeight: '500',
+              cursor: 'pointer',
+            }}
+          >
+            SignUp
+          </div>
+        </div>
+      ) : (
+        <List>
+          {['Home', 'Team'].map((text) => (
+            <ListItem button key={text}>
+              <ListItemText primary={text} />
+            </ListItem>
+          ))}
+          <div className={classes.button} style={{ marginTop: '1rem' }}>
+            User
+          </div>
+        </List>
+      )}
     </div>
   )
 }
