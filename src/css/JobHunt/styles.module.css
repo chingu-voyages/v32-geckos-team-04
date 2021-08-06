@@ -7,9 +7,19 @@
 
 .task_container {
   width: 70%;
+  height: 30%;
   padding: 1rem;
-  background-color: aqua;
+  background-color: #71ceff;
   border-radius: 1rem;
+  position: relative;
+}
+
+.plus {
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: -5px;
 }
 
 .task_container header {
@@ -26,22 +36,23 @@
 }
 
 .actions_container li {
-  background-color: gray;
-  padding: '1rem';
+  background-color: #c4c4c4;
+  padding: 5px 0;
   width: 7rem;
   height: 2rem;
   text-align: center;
   border-radius: 1rem;
-  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 .activities_container {
   display: flex;
   justify-content: space-between;
 }
 .activities {
-  background-color: gray;
+  background-color: #c4c4c4;
   width: 49%;
   height: 10rem;
-  border: 1px solid gray;
+  border: 1px solid #c4c4c4;
   border-radius: 1rem;
 }

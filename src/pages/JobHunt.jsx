@@ -13,11 +13,7 @@ const JobHunt = () => {
             <li>Hackerrank problems</li>
             <li>Update Resume</li>
           </ul>
-          <span
-            style={{ float: 'right', fontSize: '1rem', fontWeight: 'bold' }}
-          >
-            +
-          </span>
+          <span className={style.plus}>+</span>
         </div>
         <ul className={style.actions_container}>
           <li>Add Job</li>
@@ -25,9 +21,20 @@ const JobHunt = () => {
           <li>Interview Prep</li>
         </ul>
       </div>
-      <h4>You have applied to 10 jobs in the past month</h4>
+      <p style={{ marginTop: '1rem', fontWeight: '600' }}>
+        You have applied to 10 jobs in the past month
+      </p>
       <div className={style.recent_activities}>
-        <h3 style={{ textDecoration: 'underline' }}>Recent Activity</h3>
+        <h3
+          style={{
+            textDecoration: 'underline',
+            textUnderlineOffset: '5px',
+            fontSize: '1.1rem',
+            marginBottom: '1rem',
+          }}
+        >
+          Recent Activity
+        </h3>
         <div className={style.activities_container}>
           <div className={style.activities}></div>
           <div className={style.activities}></div>
