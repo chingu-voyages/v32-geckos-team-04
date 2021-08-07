@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
   Caption,
   Container,
   Heading,
   ColumnLeft,
   ColumnRight,
-  
-} from './aboutus.style'
+} from './aboutus.style';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class About extends Component {
@@ -16,7 +15,7 @@ class About extends Component {
         <Container>
           <Heading>About Us</Heading>
           <ColumnLeft>
-            <img width="100%" src="/images/pablita-finance.png" alt='about this app'/>
+            <img width="100%" src="/images/pablita-finance.png" alt="about this app"/>
           </ColumnLeft>
           <ColumnRight>
             <Caption>
@@ -36,7 +35,7 @@ class About extends Component {
           </ColumnRight>
         </Container>
       </>
-    );
+    )
   }
 }
 

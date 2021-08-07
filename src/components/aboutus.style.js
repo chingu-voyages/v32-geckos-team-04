@@ -8,7 +8,7 @@ const size = {
   laptop: '1024px',
   laptopL: '1440px',
   desktop: '2560px',
-}
+};
 
 const device = {
   mobileS: `(min-width: ${size.mobileS})`,
@@ -19,17 +19,17 @@ const device = {
   laptopL: `(min-width: ${size.laptopL})`,
   desktop: `(min-width: ${size.desktop})`,
   desktopL: `(min-width: ${size.desktop})`,
-}
+};
 
 export const Caption = styled.p`
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 13px;
-  
-`
+`;
+
 export const Container = styled.div`
   margin: 5%;
-`
+`;
 
 export const Heading = styled.h1`
   font-family: 'Roboto', sans-serif;
@@ -39,7 +39,7 @@ export const Heading = styled.h1`
   line-height: 28px;
   color: #000000;
   margin: 5%;
-`
+`;
 
 export const ColumnLeft = styled.div`
   width: 100vw;
@@ -84,6 +84,4 @@ export const ColumnRight = styled.div`
     padding: 5% 0%;
     margin: 0;
   }
-`
-
-
+`;
